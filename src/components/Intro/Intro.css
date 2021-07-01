@@ -1,6 +1,6 @@
 .intro-container {
     height: 100vh;
-    animation: onRise 2s;
+    position: relative;
 }
 
 .intro-container img {
@@ -10,11 +10,53 @@
     background-position: center;
 }
 
-@keyframes onRise {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.intro-text-container {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.intro-text-container h2 {
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.intro-text-p {
+    margin-top: 1%;
+}
+
+.intro-text-container p {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.intro-container-horizontal {
+    position: relative;
+}
+
+.horizontal-hr-right {
+    position: absolute;
+    left: 50%;
+}
+
+.horizontal-hr-left {
+    position: absolute;
+    right: 50%;
 }
