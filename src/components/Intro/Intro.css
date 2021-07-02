@@ -60,3 +60,37 @@
     position: absolute;
     right: 50%;
 }
+
+@media screen and (max-width: 768px) {
+    .intro-text-container h2 {
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 1%;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .intro-text-container p {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-height: 768px) {
+    .intro-text-container h2 {
+        color: white;
+        letter-spacing: 2px;
+        margin-bottom: 1%;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .intro-text-container p {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 2%;
+    }
+}

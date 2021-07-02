@@ -1,0 +1,88 @@
+.aboutMe-container {
+    display: flex;
+    background-color: #252525;
+}
+
+.aboutMe-left {
+    width: 70%;
+    position: relative;
+    margin: 5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.aboutMe-left h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.aboutMe-description-1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.aboutMe-descriptions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe-descriptions p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.aboutMe-right {
+    width: 30%;
+    display: flex;
+}
+
+.aboutMe-right img {
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutMe-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutMe-right {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .aboutMe-right img {
+        max-width: 50%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutMe-left {
+        width: 70%;
+        position: relative;
+        margin: 1rem auto;
+    }
+    .aboutMe-left h1 {
+        font-size: 3rem;
+    }
+    .aboutMe-description-1 {
+        font-size: 1.3rem;
+    }
+    .aboutMe-descriptions p {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+}

@@ -1,26 +1,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import introImg from "../../images/intro-img.jpg";
+import introImg from "../../images/intro-2.jpg";
 
 import "./Intro.css";
+
+const containerVariants = {
+    onStart: {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+        }
+    },
+    textPopup: {
+        initialTitle: {
+            y: 50,
+            opacity: 0
+        },
+        endTitle: {
+            y: -20,
+            opacity: 1
+        },
+        initialSub: {
+            y: -50,
+            opacity: 0
+        },
+        endSub: {
+            y: 20,
+            opacity: 1
+        },
+    },
+}
 
 export default function Intro() {
     return (
         <motion.div 
             className="intro-container" 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            variants={containerVariants.onStart}
+            initial="hidden"
+            animate="visible"
             transition={{ duration: 1.5 }}
         >
             <img src={introImg} alt="intro-background-img" />
             <div className="intro-text-container">
                 <motion.h2 
                     className="intro-text font-playfair"
-                    animate={{
-                        y: [50, -20],
-                        opacity: [0, 1]
-                    }}
+                    variants={containerVariants.textPopup}
+                    initial="initialTitle"
+                    animate="endTitle"
                     transition={{ delay: 1, duration: 1.5 }}
                 >
                     Vincent Yeung
@@ -29,6 +58,7 @@ export default function Intro() {
                     <motion.hr 
                         className="horizontal-hr-left"
                         animate={{
+                            opacity: [0, 1, 0],
                             width: ['0vw', '20vw', '0vw'],
                         }}
                         transition={{ delay: 1, duration: 1.5 }}
@@ -36,6 +66,7 @@ export default function Intro() {
                     <motion.hr 
                         className="horizontal-hr-right"
                         animate={{
+                            opacity: [0, 1, 0],
                             width: ['0vw', '20vw', '0vw'],
                         }}
                         transition={{ delay: 1, duration: 1.5 }}
@@ -44,10 +75,9 @@ export default function Intro() {
                 <div className="intro-text-p">
                     <motion.p
                         className="intro-text font-mont"
-                        animate={{
-                            y: [-50, 20],
-                            opacity: [0, 1]
-                        }}
+                        variants={containerVariants.textPopup}
+                        initial="initialSub"
+                        animate="endSub"
                     transition={{ delay: 1, duration: 1.5 }}
                     >
                         Aspiring Software Engineer
