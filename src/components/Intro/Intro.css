@@ -94,3 +94,11 @@
         margin-top: 2%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .flex-row_2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

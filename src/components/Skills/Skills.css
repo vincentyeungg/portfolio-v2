@@ -4,46 +4,110 @@
 }
 
 .skills-container img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    position: absolute;
     background-position: center;
-    opacity: 0.5;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
 }
 
 .skills__flex-container {
     display: flex;
-    position: absolute;
-    flex-wrap: wrap;
     flex-direction: column;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .flex-row_1 {
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
+    margin: 2rem 0;
 }
 
 .flex-row_1 h1 {
     font-family: 'Playfair Display', serif;
     color: white;
-    font-size: 3rem;
-    letter-spacing: 3px;
+    font-size: 4rem;
+    letter-spacing: 8px;
     text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 120px;
+    margin: auto;
 }
 
 .flex-row_2 {
     display: flex;
+    justify-content: space-evenly;
+    margin: 0 2rem 3rem 2rem;
 }
 
 .flex-col_1 {
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-icons {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.col_title h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 800;
 }
 
 .flex-col_2 {
-    width: 50%;
+    width: 30%;
 }
+
+.dev-icon {
+    outline-color: white;
+    color: white;
+    margin: 1rem;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 966px) {
+    .flex-row_2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-col_1 {
+        width: 100%;
+    }
+    .flex-col_2 {
+        width: 100%;
+    }
+    .col_title h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        font-weight: 800;
+    }
+    .flex-row_1 h1 {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+}
+
