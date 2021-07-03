@@ -25,7 +25,7 @@
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 4rem;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     text-align: center;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -57,7 +57,7 @@ hr {
 .col_title {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .col_title h2 {

@@ -1,0 +1,139 @@
+.myProjects-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 32, 32);
+    padding: 5rem 0;
+}
+
+.img-container {
+    
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 1366px;
+    height: 768px;
+    object-fit: contain;
+}
+
+hr {
+    height: 5px;
+    color: rgb(29, 124, 248);
+    background-color: rgb(29, 124, 248);
+    border-color: rgb(29, 124, 248);
+    border-radius: 5px;
+}
+
+.skills-section {
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills-section div {
+    margin: 0 1rem 1rem 0;
+    border: 1px solid white;
+    border-radius: 9%;
+    padding: 0.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+}
+
+.header h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header .info-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.description {
+    margin: 1rem;
+}
+
+.description p {
+    font-size: 1.4rem;
+}
+
+form {
+    margin: 0 1rem;
+}
+
+form input {
+    background: none;
+    border: 5px solid rgb(29, 124, 248);
+    border-radius: 10%;
+    color:rgb(29, 124, 248);
+    padding: 1rem;
+}
+
+form input:hover {
+    cursor: pointer;
+}
+
+.description p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .header .info-btns {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .header h1 {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    form {
+        margin: 0.3rem 0;
+    }
+    .description p {
+        font-size: 1rem;
+    }
+    .skill p {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+    form input {
+        background: none;
+        border: 3px solid rgb(29, 124, 248);
+        border-radius: 10%;
+        color:rgb(29, 124, 248);
+        padding: 0.3rem;
+    }
+    img {
+        width: 640px;
+        height: 360px;
+        object-fit: contain;
+    }
+    hr {
+        height: 3px;
+        color: rgb(29, 124, 248);
+        background-color: rgb(29, 124, 248);
+        border-color: rgb(29, 124, 248);
+        border-radius: 5px;
+    }
+}
