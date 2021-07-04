@@ -1,7 +1,7 @@
 import React from "react";
 import MyProject from "./MyProject/MyProject";
 import { descriptionData } from "../../data";
-import { projectImages } from "../../imagePaths/PickADateImagePaths";
+import { project_Images } from "../../imagePaths";
 
 import "./MyProjects.css";
 
@@ -9,12 +9,16 @@ export default function MyProjects() {
 
     return (
         <div className="myProjects-container">
+            <div className="myProjects__title">
+                <h1>Some of the projects I've worked on</h1>
+            </div>
+            <hr className="project-divider" />
             {descriptionData.projects.map((project, index) => (
                 <MyProject
                     key={project.id}
                     title={project.title}
                     description={project.description}
-                    images={projectImages[index]}
+                    images={project_Images[index]}
                     techUsed={project.techUsed}
                     codeLink={project.codeLink}
                     demoLink={project.demoLink}

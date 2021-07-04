@@ -1,0 +1,151 @@
+.experience-container {
+    position: relative;
+    background-color: black;
+    padding: 2rem;
+}
+
+.experience-container img {
+    position: absolute;
+    background-position: center;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.experience-section1 {
+    padding: 1rem;
+}
+
+.experience-section1 h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.experience-section1 hr {
+    height: 5px;
+    color: rgb(29, 124, 248);
+    background-color: rgb(29, 124, 248);
+    border-color: rgb(29, 124, 248);
+    border-radius: 5px;
+}
+
+.experience-flex__container {
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    width: 50%;
+    transform: translateX(50%);
+    border-radius: 5px;
+    display: flex;
+}
+
+.experience-flex__left {
+    width: 90%;
+    padding: 1rem;
+}
+
+.experience-flex__left h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.experience-flex__left h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(29, 124, 248);
+    margin: 1rem 0;
+}
+
+.experience-flex__right {
+    width: 30%;
+    padding: 1rem;
+}
+
+.experience-flex__right h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+@media screen and (max-width: 966px) {
+    .experience-section1 h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+    .experience-flex__container {
+        position: relative;
+        background-color: rgb(32, 32, 32);
+        width: 100%;
+        transform: translateX(0%);
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .experience-flex__left {
+        width: 90%;
+        padding: 1rem;
+    }
+    .experience-flex__right {
+        width: 100%;
+        padding: 1rem;
+    }
+    .experience-flex__left h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .experience-flex__left h4 {
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(29, 124, 248);
+        font-size: 1rem;
+    }
+    .experience-flex__right h4 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .experience-section1 h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    .experience-flex__container {
+        position: relative;
+        background-color: rgb(32, 32, 32);
+        width: 100%;
+        transform: translateX(0%);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .experience-flex__left {
+        padding: 1rem;
+    }
+    .experience-flex__right {
+        padding: 1rem;
+    }
+    .experience-flex__left h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 1.1rem;
+    }
+    .experience-flex__left h4 {
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(29, 124, 248);
+        font-size: 1rem;
+    }
+    .experience-flex__right h4 {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 1rem;
+    }
+}

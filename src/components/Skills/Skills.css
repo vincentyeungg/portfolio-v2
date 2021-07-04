@@ -22,13 +22,14 @@
 }
 
 .flex-row_1 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 4rem;
     letter-spacing: 5px;
     text-align: center;
     font-weight: 500;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 hr {

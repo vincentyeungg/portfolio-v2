@@ -1,8 +1,8 @@
-.myProjects-container {
+.project-container {
     display: flex;
     flex-direction: column;
     background-color: rgb(32, 32, 32);
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .img-container {
@@ -20,7 +20,7 @@ img {
     object-fit: contain;
 }
 
-hr {
+.project-divider {
     height: 5px;
     color: rgb(29, 124, 248);
     background-color: rgb(29, 124, 248);
@@ -36,9 +36,9 @@ hr {
 
 .skills-section div {
     margin: 0 1rem 1rem 0;
-    border: 1px solid white;
     border-radius: 9%;
-    padding: 0.5rem;
+    padding: 0.2rem;
+    background-color: grey;
 }
 
 .header {
@@ -92,6 +92,17 @@ form input:hover {
     color: white;
 }
 
+@media screen and (max-width: 966px) {
+    img {
+        width: 640px;
+        height: 360px;
+        object-fit: contain;
+    }
+    .header h1 {
+        font-size: 1.7rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .header .info-btns {
         display: flex;
@@ -104,7 +115,7 @@ form input:hover {
         font-family: 'Roboto', sans-serif;
         color: white;
         letter-spacing: 1px;
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 400;
     }
     form {
@@ -129,7 +140,7 @@ form input:hover {
         height: 360px;
         object-fit: contain;
     }
-    hr {
+    .project-divider {
         height: 3px;
         color: rgb(29, 124, 248);
         background-color: rgb(29, 124, 248);

@@ -1,0 +1,37 @@
+.myProjects-container {
+    background-color: rgb(32, 32, 32);
+}
+
+.myProjects__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.myProjects__title h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 966px) {
+    .myProjects__title {
+        padding: 1rem;
+    }
+    .myProjects__title h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .myProjects__title {
+        padding: 1rem;
+    }
+    .myProjects__title h1{
+        font-size: 2rem;
+    }
+}

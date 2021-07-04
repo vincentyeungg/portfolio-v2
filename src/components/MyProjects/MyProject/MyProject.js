@@ -1,5 +1,6 @@
 import React from "react";
 import {Carousel} from '3d-react-carousal';
+import { motion } from "framer-motion";
 
 import "./MyProject.css";
 
@@ -40,11 +41,21 @@ export default function MyProject({
                 <div className="info-btns">
                     {demoLink && demoLink.length > 0 && (
                         <form action={demoLink} target="_blank">
-                            <input type="submit" value="DEMO" />
+                            <motion.input 
+                                type="submit" 
+                                value="DEMO" 
+                                whileHover={{ scale: 1.2, opacity: 0.5 }}
+                                transition={{ duration: 0.25 }}
+                            />
                         </form>
                     )}
                     <form action={codeLink} target="_blank">
-                        <input type="submit" value="CODE" />
+                        <motion.input 
+                            type="submit" 
+                            value="CODE" 
+                            whileHover={{ scale: 1.2, opacity: 0.5 }}
+                            transition={{ duration: 0.25 }}
+                        />
                     </form>
                 </div>
             </div>
@@ -59,7 +70,7 @@ export default function MyProject({
                         </div>
                     ))}
             </div>
-            <hr />
+            <hr className="project-divider"/>
         </div>
     );
 }
