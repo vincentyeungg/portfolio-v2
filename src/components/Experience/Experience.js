@@ -7,7 +7,7 @@ import "./Experience.css";
 export default function Experience() {
     return (
         descriptionData && descriptionData.experiences.map((experience) => (
-            <div key={experience.id} className="experience-container">
+            <div key={experience.id} className="experience-container" id="experience-container" >
                 <img src={ExperienceImg} alt="background-img" />
                     <div className="experience-section1">
                         <h1 className="experience-sectionTitle">Experience</h1>

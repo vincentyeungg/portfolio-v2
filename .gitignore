@@ -25,3 +25,6 @@ yarn-error.log*
 /src/images
 /src/data.js
 /src/imagePaths
+.env
+.env.production
+/src/assets

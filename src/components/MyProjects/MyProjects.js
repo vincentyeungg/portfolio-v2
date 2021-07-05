@@ -8,7 +8,7 @@ import "./MyProjects.css";
 export default function MyProjects() {
 
     return (
-        <div className="myProjects-container">
+        <div className="myProjects-container" id="myProjects-container" >
             <div className="myProjects__title">
                 <h1>Some of the projects I've worked on</h1>
             </div>

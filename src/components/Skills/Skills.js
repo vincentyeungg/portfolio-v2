@@ -10,7 +10,7 @@ import "./Skills.css";
 
 export default function Skills() {
     return (
-        <div className="skills-container">
+        <div className="skills-container" id="skills-container" >
             <img src={Background} alt="background-img" />
             <div className="skills__flex-container">
                 <div className="flex-row_1">

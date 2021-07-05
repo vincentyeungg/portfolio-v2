@@ -1,6 +1,7 @@
 .aboutMe-container {
     display: flex;
     background-color: #252525;
+    padding-top: 2rem;
 }
 
 .aboutMe-left {

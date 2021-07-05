@@ -1,0 +1,45 @@
+.footer-container {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer-logo {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.ul-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-links li {
+    padding: 0 1rem;
+}
+
+.link-icon {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        padding: 0 0 1rem 0;
+    }
+    .footer-logo {
+        font-size: 0.7rem;
+    }
+    .link-icon {
+        color: white;
+        width: 0.7em;
+    }
+}

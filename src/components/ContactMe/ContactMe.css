@@ -34,6 +34,10 @@
     color: white;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .contact-form__inputs input:focus, textarea:focus {
@@ -51,6 +55,7 @@
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .contact-subHeader {
@@ -62,7 +67,7 @@
 }
 
 .contact-form__inputs {
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
 }
 
 .contact-form__inputs label {
@@ -72,4 +77,82 @@
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-btn_submit {
+    background: none;
+    border: 3px solid rgb(29, 124, 248);
+    border-radius: 5%;
+    color:rgb(29, 124, 248);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.message-sent {
+    margin: 1rem 0;
+}
+
+.message-sent p {
+    text-align: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white !important;
+}
+
+.btn-btn_submit:hover {
+    cursor: pointer;
+}
+
+.message-input {
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #c2c4c3;
+    font-size: 1rem;
+    color: white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-header h2 {
+        font-size: 1.8rem;
+    }
+    .contact-form__inputs label {
+        font-size: 0.8rem;
+    }
+    .contact-form__inputs input {
+        font-size: 0.8rem;
+    }
+    .contact-subHeader p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .btn-btn_submit {
+        padding: 0.5rem;
+    }
+    .message-input {
+        font-size: 0.8rem;
+    }
+    .message-sent p {
+        text-align: center;
+        font-size: 0.8rem;
+    }
 }
