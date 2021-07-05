@@ -41,6 +41,10 @@
     height: 1.5rem;
 }
 
+.nav-container__span:hover {
+    cursor: pointer;
+}
+
 .nav-container__span .navlink_bar {
     height: 3px;
     width: 100%;
@@ -59,5 +63,8 @@
         flex-direction: column;
         align-items: flex-end;
         width: 100%;
+    }
+    .hamburgerLinks {
+
     }
 }

@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import "./Nav.css";
 
 export default function Nav() {
+
+    const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
+    const toggleHamburgerDropdown = () => {
+        setHamburgerMenu(!hamburgerMenu);
+    };
+
     return (
-        <div class="nav-container">
+        <div className="nav-container">
             <div className="nav_links">
-                <ul className="nav_links_list">
+                <ul className={hamburgerMenu ? "nav_links_list hamburgerLinks" : "nav_links_list"}>
                     <motion.li 
                         whileHover={{ scale: 1.2, opacity: 0.75 }}
                         transition={{ duration: 0.25 }}
@@ -44,11 +51,15 @@ export default function Nav() {
                         <a href="#contact-container">CONTACT ME</a>
                     </motion.li>
                 </ul>
-                <div className="nav-container__span">
+                <motion.div 
+                    className="nav-container__span"
+                    whileHover={{ scale: 1.2, duration: 0.25 }}
+                    onClick={toggleHamburgerDropdown} 
+                >
                     <span className="navlink_bar"></span>
                     <span className="navlink_bar"></span>
                     <span className="navlink_bar"></span>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
