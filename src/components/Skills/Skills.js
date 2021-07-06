@@ -5,6 +5,7 @@ import { descriptionData } from '../../data';
 import { faCog } from "@fortawesome/free-solid-svg-icons";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Fade from 'react-reveal/Fade';
 
 import "./Skills.css";
 
@@ -13,33 +14,43 @@ export default function Skills() {
         <div className="skills-container" id="skills-container" >
             <img src={Background} alt="background-img" />
             <div className="skills__flex-container">
-                <div className="flex-row_1">
-                    <h1>Skills</h1>
-                    <hr />
-                </div>
+                <Fade top >
+                    <div className="flex-row_1">
+                        <h1>Skills</h1>
+                        <hr />
+                    </div>
+                </Fade>
                 <div className="flex-row_2">
                     <div className="flex-col_1">
                         <div className="col_title">
-                            <FontAwesomeIcon className="dev-icon" icon={faCog} size="3x" />
-                            <h2>Development</h2>
+                            <Fade left >
+                                <FontAwesomeIcon className="dev-icon" icon={faCog} size="3x" />
+                                <h2>Development</h2>
+                            </Fade>
                         </div>
                         <div className="skills-icons">
-                            {descriptionData.skills.map(skill => (
-                                <SkillIcon key={skill.id} Skill={skill.skill} />
-                            ))}
+                            <Fade left>
+                                {descriptionData.skills.map(skill => (
+                                    <SkillIcon key={skill.id} Skill={skill.skill} />
+                                ))}
+                            </Fade>
                         </div>
                     </div>
                     <div className="flex-col_2">
                         <div className="col_title">
-                            <FontAwesomeIcon className="dev-icon" icon={faTools} size="3x" />
-                            <h2>Tools</h2>
+                            <Fade right>
+                                <FontAwesomeIcon className="dev-icon" icon={faTools} size="3x" />
+                                <h2>Tools</h2>
+                            </Fade>
                         </div>
                         <div className="tools-list">
-                            <ul>
-                                {descriptionData.tools.map(tool => (
-                                    <li key={tool.id}>{tool.tool}</li>
-                                ))}
-                            </ul>
+                            <Fade right>
+                                <ul>
+                                    {descriptionData.tools.map(tool => (
+                                        <li key={tool.id}>{tool.tool}</li>
+                                    ))}
+                                </ul>
+                            </Fade>
                         </div>
                     </div>
                 </div>

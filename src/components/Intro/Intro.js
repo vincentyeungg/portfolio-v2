@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 import introImg from "../../images/intro-2.jpg";
 
@@ -38,6 +39,7 @@ export default function Intro() {
     return (
         <motion.div 
             className="intro-container" 
+            id="intro-container"
             variants={containerVariants.onStart}
             initial="hidden"
             animate="visible"
@@ -84,6 +86,15 @@ export default function Intro() {
                     </motion.p>
                 </div>
             </div>
+            <motion.div 
+                className="click-more"
+                whileHover={{ scale: 1.2, duration: 0.25 }}
+            >
+                <a className="view-more" href="#aboutMe-container">
+                    <p>VIEW MORE</p>
+                    <FaAngleDoubleDown className="link-icon" />
+                </a>
+            </motion.div>
         </motion.div>
     )
 }

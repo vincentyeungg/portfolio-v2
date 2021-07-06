@@ -1,5 +1,5 @@
 .nav-container {
-    background-color: #96bcfa;
+    background-color: rgb(147, 147, 221);
     margin: 0;
     padding: 2rem 0;
     position: sticky;
@@ -53,6 +53,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .hideHamburgerLinks {
+        display: none;
+    }
     .nav-container__span {
         display: flex;
     }
@@ -64,7 +67,36 @@
         align-items: flex-end;
         width: 100%;
     }
+    .nav_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(147, 147, 221);
+        z-index: 99;
+    }
     .hamburgerLinks {
-
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        padding-left: 0;
+        background-color: rgb(147, 147, 221);
+        z-index: 99;
+    }
+    .nav_link {
+        margin-top: 1rem;
+    }
+    .nav-container {
+        background: none;
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        top: 0;
+        height: 0;
+        z-index: 99;
     }
 }
