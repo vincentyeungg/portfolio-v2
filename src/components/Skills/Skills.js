@@ -1,7 +1,7 @@
 import React from 'react';
 import Background from "../../images/skills-background.jpg";
 import SkillIcon from '../SkillsIcons/SkillIcon';
-import { descriptionData } from '../../data';
+import { descriptionData } from '../../assets/data';
 import { faCog } from "@fortawesome/free-solid-svg-icons";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

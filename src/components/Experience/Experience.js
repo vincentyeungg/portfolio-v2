@@ -1,6 +1,6 @@
 import React from 'react';
 import ExperienceImg from "../../images/experience-img.jpg";
-import { descriptionData } from '../../data';
+import { descriptionData } from '../../assets/data';
 import Fade from 'react-reveal/Fade';
 
 import "./Experience.css";

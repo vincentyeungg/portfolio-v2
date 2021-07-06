@@ -1,6 +1,6 @@
 import React from "react";
 import MyProject from "./MyProject/MyProject";
-import { descriptionData } from "../../data";
+import { descriptionData } from "../../assets/data";
 import { project_Images } from "../../imagePaths";
 
 import "./MyProjects.css";
