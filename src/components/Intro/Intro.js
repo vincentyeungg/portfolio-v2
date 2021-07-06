@@ -88,7 +88,7 @@ export default function Intro() {
             </div>
             <motion.div 
                 className="click-more"
-                whileHover={{ scale: 1.2, duration: 0.25 }}
+                whileHover={{ opacity: 0.5, duration: 0.25 }}
             >
                 <a className="view-more" href="#aboutMe-container">
                     <p>VIEW MORE</p>

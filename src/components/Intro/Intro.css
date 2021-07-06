@@ -64,10 +64,10 @@
 .click-more {
     position: absolute;
     bottom: 5%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .click-more a {
