@@ -1,7 +1,7 @@
 import React from "react";
 import MyProject from "./MyProject/MyProject";
 import { descriptionData } from "../../assets/data";
-import { project_Images } from "../../imagePaths";
+import { project_Images } from "../../imagePaths/index";
 
 import "./MyProjects.css";
 
