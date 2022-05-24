@@ -7,14 +7,15 @@ import "./Experience.css";
 
 export default function Experience() {
     return (
-        descriptionData && descriptionData.experiences.map((experience) => (
-            <div key={experience.id} className="experience-container" id="experience-container" >
-                <img src={ExperienceImg} alt="background-img" />
-                <div className="experience-section1">
-                    <h1 className="experience-sectionTitle">Experience</h1>
-                    <hr className="title-divider" />
-                </div>
-                <div className="experience-flex__container">
+        <div className="experience-container" id="experience-container" >
+            <img src={ExperienceImg} alt="background-img" />
+            <div className="experience-section1">
+                <h1 className="experience-sectionTitle">Experience</h1>
+                <hr className="title-divider" />
+            </div>
+            {/* experiences */}
+            {descriptionData && descriptionData.experiences.map((experience) => (
+                <div key={experience.id} className="experience-flex__container">
                     <div className="experience-flex__left">
                         <Fade bottom>
                             <div className="left_info">
@@ -30,7 +31,7 @@ export default function Experience() {
                         </div>
                     </Fade>
                 </div>
-            </div>
-        ))
+            ))}
+        </div>
     )
 }

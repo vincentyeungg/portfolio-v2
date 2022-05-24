@@ -26,7 +26,7 @@ export default function AboutMe() {
                             {descriptionData.description['description-4']}
                         </p>
                         <p className="aboutMe-description">
-                            <strong>{descriptionData.description['description-5']}</strong>{descriptionData.description['dsecription-6']}
+                            {descriptionData.description['description-5']}
                         </p>
                     </div>
                 </Fade>

@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
             <Fade bottom>
                 <div className="footer-logo">
-                    © 2021 Vincent Yeung
+                    © 2022 Vincent Yeung
                 </div>
             </Fade>
         </div>
