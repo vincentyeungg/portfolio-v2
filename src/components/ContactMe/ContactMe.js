@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ContactMeImg from "../../images/contactMe-background.jpg";
+import ContactMeImg from "../../assets/imagePaths";
 import { motion } from "framer-motion";
 import axios from 'axios';
 import Fade from 'react-reveal/Fade';
@@ -31,7 +31,7 @@ export default function ContactMe() {
 
     return (
         <div className="contact-container" id="contact-container">
-            <img className="contact-container__img" src={ContactMeImg} alt="contact-me" />
+            <img className="contact-container__img" src={ContactMeImg.contactme} alt="contact-me" />
             <div className="contact-container__form">
                 <Fade top>
                     <div className="contact-header">

@@ -1,6 +1,6 @@
 import React from 'react';
-import ExperienceImg from "../../images/experience-img.jpg";
-import { descriptionData } from '../../assets/data';
+import ExperienceImg from "../../assets/imagePaths";
+import descriptionData from "../../assets/data";
 import Fade from 'react-reveal/Fade';
 
 import "./Experience.css";
@@ -8,7 +8,7 @@ import "./Experience.css";
 export default function Experience() {
     return (
         <div className="experience-container" id="experience-container" >
-            <img src={ExperienceImg} alt="background-img" />
+            <img src={ExperienceImg.experience} alt="background-img" />
             <div className="experience-section1">
                 <h1 className="experience-sectionTitle">Experience</h1>
                 <hr className="title-divider" />

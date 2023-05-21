@@ -1,7 +1,7 @@
 import React from 'react';
-import Background from "../../images/skills-background.jpg";
+import Background from "../../assets/imagePaths";
 import SkillIcon from '../SkillsIcons/SkillIcon';
-import { descriptionData } from '../../assets/data';
+import descriptionData from "../../assets/data";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +12,7 @@ import "./Skills.css";
 export default function Skills() {
     return (
         <div className="skills-container" id="skills-container" >
-            <img src={Background} alt="background-img" />
+            <img src={Background.skills} alt="background-img" />
             <div className="skills__flex-container">
                 <Fade top >
                     <div className="flex-row_1">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Resume from "../../assets/resume-vincent.pdf";
+import Resume from "../../assets/VincentYeung_Resume.pdf";
 
 import "./ClickForMore.css";
 

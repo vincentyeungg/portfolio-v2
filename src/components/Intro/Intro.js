@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaAngleDoubleDown } from "react-icons/fa";
 
-import introImg from "../../images/intro-2.jpg";
+import introImg from "../../assets/imagePaths";
 
 import "./Intro.css";
 
@@ -45,7 +45,7 @@ export default function Intro() {
             animate="visible"
             transition={{ duration: 1.5 }}
         >
-            <img src={introImg} alt="intro-background-img" />
+            <img src={introImg.intro} alt="intro-background-img" />
             <div className="intro-text-container">
                 <motion.h2 
                     className="intro-text font-playfair"
@@ -82,7 +82,7 @@ export default function Intro() {
                         animate="endSub"
                     transition={{ delay: 1, duration: 1.5 }}
                     >
-                        Aspiring Software Engineer
+                        Software Engineer
                     </motion.p>
                 </div>
             </div>

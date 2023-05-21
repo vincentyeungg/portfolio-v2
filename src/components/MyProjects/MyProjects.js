@@ -1,7 +1,7 @@
 import React from "react";
 import MyProject from "./MyProject/MyProject";
-import { descriptionData } from "../../assets/data";
-import { project_Images } from "../../imagePaths/index";
+import descriptionData from "../../assets/data";
+import project_Images from "../../assets/imagePaths";
 
 import "./MyProjects.css";
 
@@ -18,7 +18,7 @@ export default function MyProjects() {
                     key={project.id}
                     title={project.title}
                     description={project.description}
-                    images={project_Images[index]}
+                    images={project_Images[project.id]}
                     techUsed={project.techUsed}
                     codeLink={project.codeLink}
                     demoLink={project.demoLink}
