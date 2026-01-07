@@ -7,11 +7,11 @@ descriptionData.aboutMe = {
   "description-1":
     "I'm a detail oriented software engineer passionate about building scalable applications.",
   "description-2":
-    "I'm a recent computer engineering graduate from Toronto Metropolitan University (formely Ryerson University). I have experience building software applications for the web, from frontend applications to backend services hosting APIs.",
+    "I'm a computer engineering graduate from Toronto Metropolitan University. I have experience building software applications for the web, from frontend applications to backend services hosting APIs.",
   "description-3":
-    "I love learning about building scalable applications. I'm always looking for opportunities to work on different projects, learning about different frameworks and new technologies. At the end of the day, my goal is to learn and create great applications that users will want to use.",
+    "I enjoy learning about and building applications. I'm always looking for opportunities to work on different projects, learning about different frameworks and new technologies. At the end of the day, my goal is to learn and create great applications that users will want to use.",
   "description-4":
-    "I am currently working as a backend software engineer at Cercacor in the Vancouver office. The main technologies I work with day to day are SQL, Postgresql, Javascript with NodeJS and Java with Quarkus.",
+    "I am currently working as a Software Engineer at Workday in Vancouver. Feel free to reach out to me if you have any questions or want to connect!",
 };
 
 descriptionData.skills = [
@@ -37,13 +37,22 @@ descriptionData.tools = [
 
 descriptionData.experiences = [
   {
+    id: "workday",
+    position: "Software DevelopmentEngineer",
+    company: "Workday",
+    location: "Vancouver, British Columbia",
+    description:
+      "Lead 2 Epics as part of the Matrix team in Spend Management. Implemented data attachment purging to ensure complete parent–child document deletion, and delivered a system-wide unit test package update to maintain pipeline stability within the Spend Management organization. Worked on other smaller features for other developments and teams as well. Lots of cross-team collaboration and communication. to complete different team goals.",
+    duration: "June 2024 - present",
+  },
+  {
     id: "cercacor",
     position: "Backend Software Engineer",
     company: "Cercacor",
     location: "Vancouver, British Columbia",
     description:
       "Developed new social feature in application to allow members to participate in part of teams, complete weekly challenges and tally user/team progress. Also developed an internal task scheduler microservice to support multiple scheduled jobs across multiple services. Primarily worked and developed backend REST APIs for separate services.",
-    duration: "September 2022 - present",
+    duration: "September 2022 - June 2024",
   },
   {
     id: "sylogist",
